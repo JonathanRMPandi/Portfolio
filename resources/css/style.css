@@ -24,6 +24,28 @@ body {
 }
 
 /* REUSABLE */
+.btn-download:link,
+.btn-download:visited{
+    display: inline-block;
+    line-height: 32px;
+    width: 180px;
+    height: 35px;
+    font-size: 16px;
+    color: #fff;
+    background: #e67e22;
+    border-radius: 200px;
+    margin-top: 20px;    
+    border: 1px solid#e67e22;
+    transition: color 0.2s, background 0.2s, border 0.2s;
+}
+
+.btn-download:hover,
+.btn-download:active {
+    color: #e67e22;
+    background: #fff;
+    border: 1px solid#fff;
+}
+
 .clearfix {
     content: '';
     display: table;
@@ -61,7 +83,7 @@ section p.text-skeleton {
 
 a:link,
 a:visited {
-    font-size: 80%;
+    font-size: 100%;
     color: #fff;
     text-decoration: none;
     border: 1px solid #e67e22;
@@ -175,6 +197,12 @@ h4 {
     position: fixed;
     bottom: 0;
     left: 20px;
+}
+
+.site-information .contact-detail a{    
+    font-size: 100% !important;
+    color: #e67e22;
+    border: 0;
 }
 
 .site-information .copyright {
