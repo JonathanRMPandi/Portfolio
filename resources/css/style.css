@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+*:focus {
+    outline: none;
+}
+
+html,
+body {
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background-color: #fff;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* REUSABLE */
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+section {
+    background: #fff;
+    position: relative;
+    padding: 60px 0;
+}
+section h2 {
+    color: #000;
+    position: relative;
+    z-index: 2;
+}
+
+section p.text-skeleton {
+    font-size: 400% !important;
+    text-align: center;
+    color: #f7f7f7;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.row {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+a:link,
+a:visited {
+    font-size: 80%;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #e67e22;
+    border-radius: 0;
+}
+
+a:hover,
+a:active {
+    color: #e67e22;
+}
+
+/* COLOR */
+.orange {
+    color: #e67e22;
+}
+
+/* HEADING */
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 250%;
+    font-weight: 900;
+    margin: 0;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-size: 200%;
+    text-align: center;
+    word-spacing: 2px;
+}
+
+h2:after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #e67e22;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 150%;
+}
+
+h4 {
+    font-size: 100%;
+}
+
+/* SITE INFORMATION */
+.site-information {
+    display: block;
+    font-size: 80%;
+    color: #e67e22;
+    z-index: 2;
+    position: absolute;
+}
+
+.site-information .site-logo {
+    width: 65px;
+    height: 57px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.site-information .social-media {
+    display: inline-block;
+    width: 30px;
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.site-information .social-media li {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.09);
+    margin-bottom: 10px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.site-information .social-media li a {
+    color: #e67e22;
+    border: 0;
+}
+
+.site-information .contact-detail {
+    position: fixed;
+    bottom: 0;
+    left: 20px;
+}
+
+.site-information .copyright {
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+}
+
+/* HEADER */
+
+header {
+    height: 100vh;
+    background-image: url(../img/dot.png), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 9)), url(../img/hero.jpg);
+    background-size: 120px, cover, cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header .hero-text-box {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header .hero-text-box img.hero-image {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+    border: 15px solid rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+}
+
+header .hero-text-box p {
+    font-size: 80%;
+}
+
+header .mouse {
+    margin: 0 auto;
+    width: 25px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+header .mouse-icon {
+    width: 25px;
+    height: 35px;
+    border: 2px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+header .mouse-wheel {
+    height: 6px;
+    margin: 2px auto 0;
+    display: block;
+    width: 3px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-animation: 1.6s ease infinite wheel-up-down;
+    -moz-animation: 1.6s ease infinite wheel-up-down;
+    animation: 1.6s ease infinite wheel-up-down;
+}
+
+@-webkit-keyframes wheel-up-down {
+    0% {
+        margin-top: 2px;
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        margin-top: 20px;
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes wheel-up-down {
+    0% {
+        margin-top: 2px;
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        margin-top: 20px;
+        opacity: 0;
+    }
+}
+
+@keyframes wheel-up-down {
+    0% {
+        margin-top: 2px;
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        margin-top: 20px;
+        opacity: 0;
+    }
+}
+
+/* SIDE BAR NAV */
+.side-bar-nav{
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 9999;
+}
+
+.side-bar-nav ul {
+    height: 320px;
+    list-style: none;
+}
+.side-bar-nav ul li {
+    font-size: 70%;
+    transform: rotate(90deg);
+    margin-bottom: 50px;
+}
+.side-bar-nav ul li a{
+    color: #e67e22;
+    font-weight: 300;
+    border: 0;
+}
+
+/* ABOUT */
+#section-about .img-box{
+    height: 310px;
+    position: relative;
+    top: -30px;    
+    border: 10px solid #2252dc;
+}
+#section-about .img-box:after{ 
+    content: '';
+    display: block;
+    width: 130px;
+    height: 130px;
+    border: 10px solid #e67e22;
+    position: absolute;
+    bottom: -40px;
+    right: -30px;;
+    
+}
+#section-about .img-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    z-index: 1;
+}
+
+#section-about p{
+    margin-bottom: 16px;
+}
+
+/* RESUME */
+#section-resume h4{ 
+    font-weight: bold;
+}
+
+#section-resume ul {
+    padding-left: 20px;
+}
+
+/* CONTACT */
+#section-contact {
+    min-height: 100vh;
+    background-color: #242424;
+}
+#section-contact h2{
+    color: #fff;
+}
+#section-contact p.text-skeleton {
+    color: #292929;
+}
