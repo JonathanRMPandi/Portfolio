@@ -120,4 +120,8 @@
     h1 {
         font-size: 200%;
     }
+    #section-resume .experience .row::before,
+    #section-resume .education .row::before{
+        top: -10px;
+    }
 }
