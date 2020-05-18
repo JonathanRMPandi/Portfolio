@@ -1,0 +1,116 @@
+/* BIG TABLETS TO 1200PX (1024PX-1200PX) */
+@media only screen and (max-width:1200px) {  
+    html, body {
+        font-size: 16px;
+    }   
+    h2:after{
+        top: 60px;
+    } 
+
+    .mobile-nav {
+        display: none;
+    }
+
+    section {
+        padding: 60px 50px;
+    }
+
+    section p.text-skeleton {
+        top: 30px;
+    }
+
+    #section-about .img-box {
+        height: 236px;
+    }
+
+    #section-about p{
+        margin-bottom: 12px;
+    }
+
+    #section-resume .experience .row::before{
+        top: -5px;
+    }
+
+    #section-resume .skills .fa-star{
+        font-size: 12px;
+    }
+}
+
+/* SMALL TABLETS TO BIG TABLETS (768PX-1023PX) */
+@media only screen and (max-width:1023px) {   
+    html, body {
+        font-size: 14px;
+    }   
+
+    .mouse,
+    .side-bar-nav,
+    .site-information {
+        display: none;
+    }
+
+    .mobile-nav{
+        display: block;
+    }
+
+    section {
+        padding: 30px 25px;
+    }
+
+    section p.text-skeleton {
+        font-size: 300%;
+        top: 15px;
+    }
+     
+
+    #section-about .img-box {
+        height: auto;
+        top: 0;
+    }
+    
+    #section-about .img-box:after{
+        position: absolute;
+        bottom: -10px;
+        right: -10px;
+    }
+
+    #section-about .img-box img {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    #section-resume .experience .row::before{
+        top: -7px;
+    }
+
+    #section-resume .skills .fa-star {
+        font-size: 10px;
+        position: relative;
+        top: -2px;
+    }
+    
+}
+
+/* SMALL PHONES TO SMALL TABLETS (481PX-767PX) */
+@media only screen and (max-width:767px) {     
+    header .hero-text-box img.hero-image {
+        width: 150px;
+        height: 150px;
+    }      
+
+    section {
+        padding: 25px 10px;
+    } 
+    
+    section p.text-skeleton {
+        font-size: 300%;
+        top: 10px;
+    }
+}
+
+/* SMALL PHONES (0-480PX) */
+@media only screen and (max-width:480px) {
+    h1 {
+        font-size: 200%;
+    }
+}
